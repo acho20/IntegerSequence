@@ -18,9 +18,10 @@ public class Range implements IntegerSequence{
 
   public int next(){
     try{
-
+      current++;
+      return current - 1;
     }catch (NoSuchElementException e){
-
+      throw(e);
     }
   }
 
