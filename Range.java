@@ -4,10 +4,14 @@ public class Range implements IntegerSequence{
   public Range(int start,  int end){
     this.start = start;
     this.end = end;
-    current = 0;
+    current = start;
   }
-  public void reset(){  }
-  public int length(){  }
+  public void reset(){
+     current = start;
+  }
+  public int length(){
+    
+  }
   public boolean hasNext(){  }
 
   //@throws NoSuchElementException
