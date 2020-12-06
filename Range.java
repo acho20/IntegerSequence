@@ -1,5 +1,5 @@
 import java.util.NoSuchElementException;
-public class Range implements IntegerSequence{
+class Range implements IntegerSequence{
   private int start,end,current;
   public Range(int start,  int end){
     this.start = start;
@@ -13,7 +13,7 @@ public class Range implements IntegerSequence{
     return end - start + 1;
   }
   public boolean hasNext(){
-    return current != end;
+    return current != end + 1;
   }
 
   public int next(){
