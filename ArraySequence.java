@@ -24,13 +24,13 @@ public class ArraySequence implements IntegerSequence{
   public int next(){
     try{
       currentIndex++;
-      return currentIndex - 1;
+      return data[currentIndex - 1];
     }catch (NoSuchElementException e){
       throw(e);
     }
   }
   public boolean hasNext(){
-    return currentIndex != data.length - 1;
+    return currentIndex != data.length;
   }
   public void reset(){
     currentIndex = 0;
