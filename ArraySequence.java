@@ -11,4 +11,12 @@ public class ArraySequence implements IntegerSequence{
   public int length(){
     return data.length;
   }
+  public int next(){
+    try{
+      currentIndex++;
+      return currentIndex - 1;
+    }catch (NoSuchElementException e){
+      throw(e);
+    }
+  }
 }
