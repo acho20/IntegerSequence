@@ -20,6 +20,9 @@ public class ArraySequence implements IntegerSequence{
     }
   }
   public boolean hasNext(){
-    return current != data.length - 1;
+    return currentIndex != data.length - 1;
+  }
+  public void reset(){
+    currentIndex = 0;
   }
 }
