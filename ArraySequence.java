@@ -19,4 +19,7 @@ public class ArraySequence implements IntegerSequence{
       throw(e);
     }
   }
+  public boolean hasNext(){
+    return current != data.length - 1;
+  }
 }
